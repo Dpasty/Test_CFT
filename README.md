@@ -20,3 +20,4 @@
   ```
 Для запуска программы необходима установленная система сборки Maven.
 В папке проекта нужно ввести команду `mvn clean package`, после чего в папке target сформируется необходимый jar пакет, который будет называться TestTaskCFT-1.0-SNAPSHOT-jar-with-dependencies.jar. Запускаем его с помощью команды `java -jar TestTaskCFT-1.0-SNAPSHOT-jar-with-dependencies.jar`, не забывая указать необходимые аргументы.
+Тесты можно прогнать командой `mvn clean test`.
