@@ -60,6 +60,9 @@ public class ExternalMergeSort {
                 result = null;
             } else {
                 result = files.get(0);
+                if (Files.exists(Paths.get(outputFileName))) {
+                    Files.delete(Paths.get(outputFileName));
+                }
                 Path output = Paths.get(outputFileName);
                 Files.copy(result, output);
             }
